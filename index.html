@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Qwigley&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/logo.png">
+    <title>Anuj's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <p>Anuj's Portfolio</p>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" id="close" onclick="openmenu()"></i>
+        </nav>
+        <div class="main">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Anuj Singh</span></h1>
+                <br>
+                <p>A passionate Front-End Developer</p>
+                Familiar with~ <span id="element"></span>
+            </div>
+            <div><img src="./src/dev.webp"></div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./src/Photo.png" class="profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate Front-End Developer who creates captivating digital experiences.<br><br>
+                      I thrive on crafting captivating digital experiences that leave a lasting impression. With a fervent love for code and a keen eye for efficiency and design, I specialize in front-end technologies. From crafting seamless user interfaces with HTML, CSS, and JavaScript With React.Js. I ensure that every aspect of a project resonates with excellence.
+                      
+                      Driven by a relentless pursuit of user satisfaction, I prioritize the user experience, enabling seamless navigation and intuitive interactions. I embrace collaboration wholeheartedly, welcoming constructive criticism as a catalyst for growth and improvement. In an ever-evolving digital landscape, I remain committed to continuous learning, staying abreast of the latest trends and technologies.
+                      
+                      Feel free to explore the projects showcased in my portfolio, a testament to my dedication and expertise. Let's connect and explore opportunities to collaborate, bringing innovative ideas to life and delivering exceptional digital solutions together.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Developer</span><br>HTML<br>CSS<br> JavaScript<br>React.Js<br> Bootstrap,Tailwind CSS, Figma, Meterial UI, </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span>2016</span><br>HIGH SCHOOL from UP Board [GOVT INTER COLLEGE]
+                          </li>
+                          <li><span>2018</span><br>INTERMEDIATE from UP Board [GOVT INTER COLLEGE]</li>
+                          <li><span>2019-2022</span><br>Bachelor of Arts(BA)[CCS University]
+                            </li>
+                            <li><span>[Udemy]</span><br>Udemy -Web development(HTML, CSS, javaScript)
+                            </li>
+                            <li><span>[Udemy]</span><br>Udemy – FULL -STACK WEB DEVELOPER
+                            </li>
+                            <li><span>[Udemy]</span><br>Udemy -MERN STACK FRONT TO BACK
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="services">
+        <h1 class="sub-title">&nbsp;My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Development</h2>
+                <p>
+                  Transform your online presence with a tailored suite of web development services. From crafting custom websites that embody your brand's essence to ensuring seamless functionality with responsive design, I specialize in both front-end and back-end programming. Need an e-commerce platform or website optimization for enhanced performance? I've got you covered. Plus, I offer hosting assistance, upkeep, and professional advice to ensure your online space is not only gorgeous but also inviting. Let's collaborate to make your company's digital presence a stunning success.!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">&nbsp;My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./src/work.png" alt="img">
+                    <div class="layer">
+                        <h2>Spotify Clone</h2>
+                        <p>Developed a Spotify clone web application using HTML &amp; CSS.</p>
+                        <a href="https://spotify-clone-subham.netlify.app/">open</a>
+                    </div>
+                </div>
+                    <div class="work">
+                      <img src="./src/React_Camera.avif" alt="img">
+                      <div class="layer">
+                          <h2>Camera</h2>
+                          <p>I developed a feature-rich image capture application using React JS, equipped with the ability to use both front and back cameras for image capture. Users can zoom in before taking a picture and select different aspect ratios. After capture, images are elegantly displayed in a gallery where they can be zoomed in on hover.
+                          </p>
+                          <a href="https://camera-app-8wtx.onrender.com/">open</a>
+                      </div>
+                </div>
+                <div class="coming">
+                    <h2>Many more coming soon...</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="mail"><i class="fa-solid fa-envelope "></i>anuj.singh00766@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7668664735</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/anujsingh.suryavanshi.7"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href=""><i
+                                class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/a_i_766/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anuj-singh-a52a73303/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="./src/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="confirm"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made by Anuj Singh <i class="fa-regular fa-heart fa-beat-fade"></i></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['HTML ', 'CSS ', 'Javascript', 'React.Js','Node.js', 'MySQL', 'MongoDB'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
