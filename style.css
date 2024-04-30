@@ -26,6 +26,7 @@ body {
 
 #element {
   color: rgb(235, 230, 80);
+  grid-auto-rows: auto;
 }
 
 .header-text {
