@@ -299,7 +299,8 @@ width: 100%;
 }
 
 .layer a {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 20%;
   color: #080808;
   text-decoration: none;
   font-size: 18px;
